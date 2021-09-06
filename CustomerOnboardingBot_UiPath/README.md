@@ -1,0 +1,1 @@
+Solving the task using different approaches
