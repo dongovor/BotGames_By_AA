@@ -1,1 +1,8 @@
 Very simple solution using different approaches(http requests, simple regexes, ui interraction)
+
+Here is the script from the solution:
+"function () { document.getElementById('shipDate"+System.Text.RegularExpressions.Regex.Match(poNumber.ToString, "\d+").Value+"').value = '"+drTmpDataRow(0)(6).ToString+
+"'; document.getElementById('orderTotal"+System.Text.RegularExpressions.Regex.Match(poNumber.ToString, "\d+").Value+"').value = '"+drTmpDataRow(0)(7).ToString.Split("$"c).Last.Trim +
+"'; document.getElementById('agent"+System.Text.RegularExpressions.Regex.Match(poNumber.ToString, "\d+").Value+"').value = '"+
+dt_Agents.Select("[State] = '"+drTmpDataRow(0)(4).ToString+"'")(0)(1).ToString+
+"'; }"
